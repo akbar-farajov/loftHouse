@@ -1,0 +1,41 @@
+// Base
+@import './reset';
+@import './var';
+
+// UI
+@import '../ui/logo';
+@import "../ui/button";
+@import "../ui/input";
+
+// Layout
+@import "../layout/header";
+@import "../layout/footer";
+
+//Block
+
+@import '../block/appartment_advantages.scss';
+@import '../block/appartment_images.scss';
+@import '../block/appartment_info.scss';
+@import '../block/appartment_video';
+@import '../block/appartment_map.scss';
+@import '../block/appartment_quest';
+
+
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+body {
+    font-family: $font-base;
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
