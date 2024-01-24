@@ -2,6 +2,8 @@
 @import './reset';
 @import './var';
 
+@import "breakpoints";
+
 // UI
 @import '../ui/logo';
 @import "../ui/button";
@@ -19,6 +21,8 @@
 @import '../block/appartment_video';
 @import '../block/appartment_map.scss';
 @import '../block/appartment_quest';
+
+
 
 
 

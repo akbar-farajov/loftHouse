@@ -140,7 +140,6 @@ button:hover {
   padding-bottom: 51px;
 }
 .footer-items {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -198,6 +197,7 @@ button:hover {
   display: flex;
   justify-content: center;
   gap: 70px;
+  flex-wrap: wrap;
 }
 .appartment-advantages-items .appartment-advantages-item {
   margin-bottom: 120px;
@@ -207,7 +207,17 @@ button:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  line-height: 27px; /* 135% */
+  line-height: 27px;
+}
+@media (max-width: 480px) {
+  .appartment-advantages-items .appartment-advantages-item {
+    width: 100%;
+  }
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-advantages-items .appartment-advantages-item {
+    width: 30%;
+  }
 }
 .appartment-advantages-items .appartment-advantages-item img {
   width: 80px;

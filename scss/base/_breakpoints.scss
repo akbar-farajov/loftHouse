@@ -1,0 +1,13 @@
+$breakpoints:(
+    "sm": "max-width: 480px", 
+    "md":  " (min-width: 481px) and (max-width: 773px)",
+    "lg": "min-width: 773.5px",
+);
+
+@mixin breakpoint($user-value){
+    $my-map: map-get($breakpoints , $user-value );
+    @media (#{$my-map}){
+        @content;
+    }
+}
+
