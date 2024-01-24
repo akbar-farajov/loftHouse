@@ -417,11 +417,15 @@ button:hover {
 .appartment-video__item {
   position: relative;
 }
+.appartment-video__item img {
+  max-width: 100%;
+}
 .appartment-video .play_button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 100%;
 }
 
 .appartment-map {
@@ -433,6 +437,16 @@ button:hover {
   font-weight: 700;
   font-family: "Playfair Display";
   color: #d4c17f;
+}
+@media (max-width: 480px) {
+  .appartment-map__items h1 {
+    font-size: 20px;
+  }
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-map__items h1 {
+    font-size: 25px;
+  }
 }
 .appartment-map__items .map {
   min-height: 358px;

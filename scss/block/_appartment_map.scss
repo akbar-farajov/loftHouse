@@ -8,6 +8,13 @@
             font-weight: 700;
             font-family: 'Playfair Display';
             color: $accent-color;
+            @include breakpoint(sm) {
+                font-size: 20px;
+            }
+            @include breakpoint(md) {
+                font-size: 25px;
+            }
+
         }
 
         .map {
