@@ -12,8 +12,7 @@
             rgba(36, 43, 51, 0.9) 0%,
             rgba(36, 43, 51, 0.9) 100%
         ),
-        url('../images/appartmentInfoImg.jpg'),
-        lightgray 50% / cover no-repeat;
+        url('../images/appartmentInfoImg.jpg'), lightgray 50% / cover no-repeat;
 
     h1 {
         font-size: 36px;
@@ -21,12 +20,30 @@
         margin-bottom: 15px;
         font-weight: 700;
         font-family: 'Playfair Display';
+        @include breakpoint(md) {
+            font-size: 25px;
+            text-align: center;
+        }
+        @include breakpoint(sm) {
+            font-size: 20px;
+            text-align: center;
+        }
     }
 
     &-items {
         display: flex;
         justify-content: space-between;
         gap: 30px;
+
+        @include breakpoint(md) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include breakpoint(sm) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .appartment-info {
             &-left {
                 width: 50%;
@@ -35,17 +52,41 @@
                     font-size: 16px;
                     line-height: 24px;
                 }
+                @include breakpoint(sm) {
+                    width: 100%;
+                }
+                @include breakpoint(md) {
+                    width: 100%;
+                }
             }
             &-right {
                 width: 50%;
+                @include breakpoint(sm) {
+                    width: 100%;
+                }
+                @include breakpoint(md) {
+                    width: 100%;
+                }
                 .cta-form {
                     display: flex;
                     gap: 30px;
-                    input{
+                    @include breakpoint(sm) {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    @include breakpoint(md) {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        width: 100%;
+                    }
+                    input {
                         margin-bottom: 46px;
                     }
                     &-left {
                         width: 50%;
+                        @include breakpoint(sm) {
+                            width: 100%;
+                        }
                         p {
                             font-size: 13px;
                             text-align: center;
@@ -55,6 +96,9 @@
                     }
                     &-right {
                         width: 50%;
+                        @include breakpoint(sm) {
+                            width: 100%;
+                        }
                     }
                 }
             }

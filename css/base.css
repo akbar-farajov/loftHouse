@@ -306,10 +306,34 @@ button:hover {
   font-weight: 700;
   font-family: "Playfair Display";
 }
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-info h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .appartment-info h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 .appartment-info-items {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-info-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .appartment-info-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .appartment-info-items .appartment-info-left {
   width: 50%;
@@ -319,18 +343,56 @@ button:hover {
   font-size: 16px;
   line-height: 24px;
 }
+@media (max-width: 480px) {
+  .appartment-info-items .appartment-info-left {
+    width: 100%;
+  }
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-info-items .appartment-info-left {
+    width: 100%;
+  }
+}
 .appartment-info-items .appartment-info-right {
   width: 50%;
+}
+@media (max-width: 480px) {
+  .appartment-info-items .appartment-info-right {
+    width: 100%;
+  }
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-info-items .appartment-info-right {
+    width: 100%;
+  }
 }
 .appartment-info-items .appartment-info-right .cta-form {
   display: flex;
   gap: 30px;
+}
+@media (max-width: 480px) {
+  .appartment-info-items .appartment-info-right .cta-form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-info-items .appartment-info-right .cta-form {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .appartment-info-items .appartment-info-right .cta-form input {
   margin-bottom: 46px;
 }
 .appartment-info-items .appartment-info-right .cta-form-left {
   width: 50%;
+}
+@media (max-width: 480px) {
+  .appartment-info-items .appartment-info-right .cta-form-left {
+    width: 100%;
+  }
 }
 .appartment-info-items .appartment-info-right .cta-form-left p {
   font-size: 13px;
@@ -340,6 +402,11 @@ button:hover {
 }
 .appartment-info-items .appartment-info-right .cta-form-right {
   width: 50%;
+}
+@media (max-width: 480px) {
+  .appartment-info-items .appartment-info-right .cta-form-right {
+    width: 100%;
+  }
 }
 
 .appartment-video {
