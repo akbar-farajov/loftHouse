@@ -237,6 +237,16 @@ button:hover {
   color: #d4c17f;
   margin-bottom: 88px;
 }
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-images h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .appartment-images h1 {
+    font-size: 24px;
+  }
+}
 .appartment-images-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -244,6 +254,18 @@ button:hover {
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 10px;
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-images-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .appartment-images-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 .appartment-images-items .appartment-images-item {
   position: relative;
@@ -260,6 +282,16 @@ button:hover {
   color: #fff;
   z-index: 10;
   font-size: 20px;
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-images-items .appartment-images-item p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .appartment-images-items .appartment-images-item p {
+    font-size: 10px;
+  }
 }
 
 .appartment-info {

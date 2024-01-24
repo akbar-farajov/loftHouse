@@ -5,6 +5,13 @@
         font-size: 36px;
         color: $accent-color;
         margin-bottom: 88px;
+        @include breakpoint(md) {
+            font-size: 30px;
+        }
+        @include breakpoint(sm) {
+            font-size: 24px;
+        }
+
     }
     &-items {
         display: grid;
@@ -12,6 +19,15 @@
         grid-template-rows: repeat(2, 1fr);
         column-gap: 30px;
         row-gap: 10px;
+        @include breakpoint(md) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        @include breakpoint(sm) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            
+        }
         .appartment-images-item {
             position: relative;
             img {
@@ -26,6 +42,12 @@
                 color: $white-color;
                 z-index: 10;
                 font-size: 20px;
+                @include breakpoint(md) {
+                    font-size: 15px;
+                }
+                @include breakpoint(sm) {
+                    font-size: 10px;
+                }
             }
         }
     }
