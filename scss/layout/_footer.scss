@@ -67,9 +67,6 @@
                 .social-media ul {
                     display: flex;
                     gap: 12px;
-                    @include breakpoint(md){
-                        justify-content: center;
-                    }
                     @include breakpoint(sm){
                         justify-content: center;
                     }

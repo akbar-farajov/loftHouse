@@ -14,16 +14,56 @@
     &__top-items {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        /* align-items: center; */
     }
 
-    .navbar ul {
+    .navbar {
         display: flex;
-        li a {
-            color: $white-color;
-            margin-right: 40px;
-            &:hover {
-                color: gray;
+        @include breakpoint(md) {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 40px;
+        }
+        @include breakpoint(sm) {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 40px;
+        }
+        ul {
+            display: flex;
+            gap: 40px;
+            @include breakpoint(md) {
+                display: none;
+                flex-direction: column;
+            }
+            @include breakpoint(sm) {
+                display: none;
+                flex-direction: column;
+            }
+
+            li a {
+                color: $white-color;
+
+                &:hover {
+                    color: gray;
+                }
+                &.active {
+                    display: flex;
+                }
+            }
+        }
+        .menu-bar {
+            width: 100%;
+            
+            display: none;
+
+            @include breakpoint(md) {
+                display: block;
+                height: 30px;
+            }
+            @include breakpoint(sm) {
+                display: block;
+                height: 20px;
             }
         }
     }
@@ -40,6 +80,12 @@
             font-style: normal;
             font-weight: 700;
             margin-bottom: 81px;
+            @include breakpoint(md) {
+                font-size: 35px;
+            }
+            @include breakpoint(sm) {
+                font-size: 20px;
+            }
         }
     }
     &__bottom-items {
@@ -48,8 +94,20 @@
         gap: 98px;
         color: $white-color;
         margin-bottom: 74px;
+        @include breakpoint(md) {
+            font-size: 14px;
+        }
+        @include breakpoint(sm) {
+            font-size: 7px;
+        }
     }
     p img {
         margin-right: 14px;
+        @include breakpoint(md) {
+            width: 14px;
+        }
+        @include breakpoint(sm) {
+            width: 7px;
+        }
     }
 }

@@ -1,7 +1,7 @@
 $breakpoints:(
     "sm": "max-width: 480px", 
-    "md":  " (min-width: 481px) and (max-width: 773px)",
-    "lg": "min-width: 773.5px",
+    "md":  " (min-width: 481px) and (max-width: 805px)",
+    "lg": "min-width: 805.1px",
 );
 
 @mixin breakpoint($user-value){
