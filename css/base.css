@@ -465,6 +465,16 @@ button:hover {
   font-weight: 700;
   color: #d4c17f;
 }
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-questions h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .appartment-questions h1 {
+    font-size: 20px;
+  }
+}
 .appartment-questions form {
   padding-top: 38px;
 }
@@ -473,8 +483,30 @@ button:hover {
   width: 100%;
   gap: 30px;
 }
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-questions ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .appartment-questions ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .appartment-questions ul li {
   width: 25%;
+}
+@media ( (min-width: 481px) and (max-width: 773px)) {
+  .appartment-questions ul li {
+    width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  .appartment-questions ul li {
+    width: 100%;
+  }
 }
 .appartment-questions ul li p {
   text-align: center;
