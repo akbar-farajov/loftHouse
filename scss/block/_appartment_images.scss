@@ -22,10 +22,12 @@
         @include breakpoint(md) {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
+            row-gap: 30px;
         }
         @include breakpoint(sm) {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
+            row-gap: 30px;
             
         }
         .appartment-images-item {

@@ -1,6 +1,6 @@
 .header {
     padding-top: 30px;
-    min-height: 840px;
+    // min-height: 840px;
     background: linear-gradient(
             180deg,
             #242b33 11.98%,
@@ -11,9 +11,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     &__top-items {
         display: flex;
         justify-content: space-between;
+
         /* align-items: center; */
     }
 
@@ -54,7 +56,7 @@
         }
         .menu-bar {
             width: 100%;
-            
+
             display: none;
 
             @include breakpoint(md) {
@@ -95,10 +97,10 @@
         color: $white-color;
         margin-bottom: 74px;
         @include breakpoint(md) {
-            font-size: 14px;
+            font-size: 20px;
         }
         @include breakpoint(sm) {
-            font-size: 7px;
+            font-size: 11px;
         }
     }
     p img {

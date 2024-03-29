@@ -5,10 +5,17 @@
         justify-content: center;
         gap: 70px;
         flex-wrap: wrap;
+        padding: 120px 0;
+        @include breakpoint(sm) {
+            gap: 40px;
+            padding: 50px 0;
+        }
+        @include breakpoint(md){
+            gap: 40px;
+            padding: 40px 0;
+        }
         
         .appartment-advantages-item {
-            margin-bottom: 120px;
-            margin-top: 120px;
             color: $accent-color;
             text-align: center;
             font-family: Roboto;

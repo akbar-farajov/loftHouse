@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,8 +87,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -28,16 +105,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -66,16 +147,6 @@ table {
   font-size: 12px;
   font-family: Raleway;
 }
-@media ( (min-width: 481px) and (max-width: 805px)) {
-  .logo span {
-    font-size: 7px;
-  }
-}
-@media (max-width: 480px) {
-  .logo span {
-    font-size: 5px;
-  }
-}
 
 button {
   height: 50px;
@@ -97,17 +168,16 @@ button:hover {
   border: none;
   outline: none;
   height: 50px;
-  background: #fff;
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
   padding: 0 10px;
   width: 100%;
+  color: white;
   /* margin-bottom: 46px; */
 }
 
 .header {
   padding-top: 30px;
-  min-height: 840px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../images/headerBacground.jpg"), lightgray 50%/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -210,12 +280,12 @@ button:hover {
 }
 @media ( (min-width: 481px) and (max-width: 805px)) {
   .header__bottom-items {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 @media (max-width: 480px) {
   .header__bottom-items {
-    font-size: 7px;
+    font-size: 11px;
   }
 }
 .header p img {
@@ -333,10 +403,21 @@ button:hover {
   justify-content: center;
   gap: 70px;
   flex-wrap: wrap;
+  padding: 120px 0;
+}
+@media (max-width: 480px) {
+  .appartment-advantages-items {
+    gap: 40px;
+    padding: 50px 0;
+  }
+}
+@media ( (min-width: 481px) and (max-width: 805px)) {
+  .appartment-advantages-items {
+    gap: 40px;
+    padding: 40px 0;
+  }
 }
 .appartment-advantages-items .appartment-advantages-item {
-  margin-bottom: 120px;
-  margin-top: 120px;
   color: #d4c17f;
   text-align: center;
   font-family: Roboto;
@@ -386,20 +467,21 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   row-gap: 10px;
 }
 @media ( (min-width: 481px) and (max-width: 805px)) {
   .appartment-images-items {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    row-gap: 30px;
   }
 }
 @media (max-width: 480px) {
   .appartment-images-items {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    row-gap: 30px;
   }
 }
 .appartment-images-items .appartment-images-item {
